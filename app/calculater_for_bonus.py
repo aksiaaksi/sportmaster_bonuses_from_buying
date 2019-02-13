@@ -1,35 +1,28 @@
 def calculate_for_bonus(purchase_amount):
 
     """
-    >>>calculate_for_bonus(999)
+    >>> calculate_for_bonus(999)
     0
 
-
-    >>>calculate_for_bonus(1_000)
+    >>> calculate_for_bonus(1_000)
     50
 
-
-    >>>calculate_for_bonus(1668)
+    >>> calculate_for_bonus(1668)
     50
 
-
-    >>>calculate_for_bonus(4995)
+    >>> calculate_for_bonus(4995)
     200
 
-
-    >>>calculate_for_bonus(15199)
+    >>> calculate_for_bonus(15199)
     1050
 
-
-    >>>calculate_for_bonus(49999
+    >>> calculate_for_bonus(49999)
     3430
 
-
-    >>>calculate_for_bonus(150_000)
+    >>> calculate_for_bonus(150_000)
     10500
 
-
-    >>>calculate_for_bonus(169000)
+    >>> calculate_for_bonus(169000)
     16900
     """
 
@@ -55,9 +48,9 @@ def calculate_for_bonus(purchase_amount):
         result2 = ((purchase_amount // share) * number_bonus_on_high_step)
         return result2
 
-    return
+   # return "Thanks"
 
-print(calculate_for_bonus(16000))
+#print(calculate_for_bonus(16000))
 
 
 
