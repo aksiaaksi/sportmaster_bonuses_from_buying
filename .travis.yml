@@ -8,3 +8,4 @@ install:
 
 script:
   - pytest --cov=app --cov-fail-under=100
+  - codecov
