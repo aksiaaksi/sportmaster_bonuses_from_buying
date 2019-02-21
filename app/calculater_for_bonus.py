@@ -32,27 +32,27 @@ def calculate_for_bonus(purchase_amount, amount_previous_purchases):
     number_bonus_on_medium_step = 70
     number_bonus_on_high_step = 100
     bottom_line = 0
-    bottom_line_1 = 1000
+    bottom_line_min = 1000
     middle_border = 15_000
     upper_bound = 150_000
 
 
-    if bottom_line < purchase_amount <  bottom_line_1:
+    if bottom_line < purchase_amount <  bottom_line_min:
         return 0
 
     if bottom_line <= amount_previous_purchases <= middle_border:
         result = (purchase_amount // share) * number_bonus_on_begin_step
         return result
     if middle_border <= amount_previous_purchases <= upper_bound:
-        result1 = ((purchase_amount // share) * number_bonus_on_medium_step)
-        return result1
+        result = ((purchase_amount // share) * number_bonus_on_medium_step)
+        return result
     if  amount_previous_purchases > upper_bound:
-        result2 = ((purchase_amount // share) * number_bonus_on_high_step)
-        return result2
+        result = ((purchase_amount // share) * number_bonus_on_high_step)
+        return result
 
     #return
 
-#print(calculate_for_bonus(169_000, 160_000))
+print(calculate_for_bonus(169_000, 160_000))
 
 
 
