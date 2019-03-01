@@ -35,19 +35,19 @@ def calculate_for_bonus(purchase_amount, amount_previous_purchases):
     bottom_line_min = 1000
     middle_border = 15_000
     upper_bound = 150_000
-    number_of_shares = purchase_amount // share
+    number_shares = purchase_amount // share
 
     if bottom_line < purchase_amount <  bottom_line_min:
         return 0
 
     if bottom_line <= amount_previous_purchases <= middle_border:
-        result = number_of_shares * number_bonus_on_begin_step
+        result = number_shares * number_bonus_on_begin_step
         return result
     if middle_border <= amount_previous_purchases <= upper_bound:
-        result = number_of_shares * number_bonus_on_medium_step
+        result = number_shares * number_bonus_on_medium_step
         return result
     if  amount_previous_purchases > upper_bound:
-        result = number_of_shares * number_bonus_on_high_step
+        result = number_shares * number_bonus_on_high_step
         return result
 
 
