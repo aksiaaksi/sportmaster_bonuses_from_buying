@@ -50,9 +50,7 @@ def calculate_for_bonus(purchase_amount, amount_previous_purchases):
         result = number_of_shares * number_bonus_on_high_step
         return result
 
-    #return
 
-print(calculate_for_bonus(169_000, 160_000))
 
 
 
